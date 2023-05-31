@@ -1,0 +1,977 @@
+<html lang="en" class="overflow-x-hidden scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/vendor.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Innovate</title>
+  </head>
+
+  <body
+    class="overflow-x-hidden bg-primary-100 font-medium leading-relaxed text-primary-500"
+  >
+    <nav
+      class="js-navbar fixed left-0 top-0 z-50 w-full bg-primary-200 py-6 transition duration-300"
+    >
+      <div class="container flex items-center justify-between">
+        <a href="#">
+          <img src="./assets/images/logo-dark.svg" alt="" />
+        </a>
+
+        <button
+          class="js-open-menu h-10 w-10 lg:hidden"
+          aria-label="open menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <span class="mx-auto block h-[2px] w-8 bg-primary-900"></span>
+          <span class="mx-auto my-2 block h-[2px] w-8 bg-primary-900"></span>
+          <span class="mx-auto block h-[2px] w-8 bg-primary-900"></span>
+        </button>
+
+        <div
+          id="main-menu"
+          class="js-menu absolute left-0 top-0 z-50 h-screen w-full -translate-x-full overflow-auto bg-white transition-transform lg:hidden"
+        >
+          <button class="js-close-menu absolute right-4 top-4">
+            <img src="./assets/images/close.svg" alt="" />
+          </button>
+          <div class="flex h-full items-center justify-center">
+            <ul class="w-full text-center text-primary-900">
+              <li>
+                <a href="#features" class="block py-3">Features</a>
+              </li>
+              <li>
+                <a href="#reviews" class="block py-3">Reviews</a>
+              </li>
+              <li>
+                <a href="#pricing" class="block py-3">Pricing</a>
+              </li>
+              <li>
+                <a href="#faqs" class="block py-3">Faqs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hidden lg:block">
+          <ul class="flex items-center space-x-6 text-primary-900">
+            <li>
+              <a
+                href="#features"
+                class="p-2 transition-colors hover:text-primary-600"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reviews"
+                class="p-2 transition-colors hover:text-primary-600"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="p-2 transition-colors hover:text-primary-600"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faqs"
+                class="p-2 transition-colors hover:text-primary-600"
+                >Faqs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-primary-200 pt-44">
+      <div class="container grid items-center gap-16 lg:grid-cols-2">
+        <div class="text-center lg:text-left" data-animate="fade-up">
+          <h1 class="fs-1 mb-10">Investment Platform for Beginners</h1>
+          <div
+            class="mx-auto mb-10 flex max-w-sm flex-col items-center space-y-2 lg:mx-0 lg:flex-row lg:space-x-4 lg:space-y-0"
+          >
+            <img src="./assets/images/investors.webp" class="h-10" alt="" />
+            <p class="text-lg">
+              Join with <span class="font-bold">56000+ Investors</span> and grow
+              your business online
+            </p>
+          </div>
+
+          <div
+            class="inline-flex flex-col items-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0"
+          >
+            <a href="#" class="button-primary">
+              <svg
+                width="15"
+                height="18"
+                viewBox="0 0 15 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4347 12.0633C13.9341 11.8492 13.5076 11.4923 13.2087 11.0373C12.9097 10.5823 12.7514 10.0492 12.7535 9.50476C12.76 9.01876 12.8902 8.54241 13.1317 8.12064C13.3733 7.69888 13.7183 7.34559 14.1342 7.0941C14.2283 7.03595 14.3097 6.95932 14.3733 6.86884C14.437 6.77836 14.4816 6.67591 14.5045 6.56769C14.5275 6.45947 14.5282 6.34773 14.5067 6.23921C14.4852 6.1307 14.442 6.02766 14.3795 5.93634C14.0056 5.39262 13.5182 4.93651 12.9509 4.5995C12.3836 4.26249 11.7499 4.05261 11.0936 3.98434C11.7044 3.01488 11.9816 1.87231 11.883 0.730692C11.8637 0.523394 11.7649 0.331616 11.6073 0.1956C11.4497 0.0595846 11.2455 -0.010095 11.0376 0.00118339C9.63273 0.126399 8.33037 0.789025 7.40205 1.85092C6.81359 2.5328 6.39833 3.34659 6.19153 4.22323C5.76428 4.07864 5.31697 4.00206 4.86595 3.99631C4.03096 4.01997 3.21626 4.25898 2.50082 4.69016C1.78539 5.12133 1.19349 5.73005 0.782533 6.45729C-0.761986 9.13881 0.182865 13.1571 1.85601 15.5758C2.52719 16.545 3.53437 18 5.05371 18C5.08367 18 5.11404 18 5.1444 17.9984C5.65347 17.9695 6.15184 17.8405 6.61101 17.6188C6.97777 17.4329 7.38241 17.334 7.79357 17.3296C8.18023 17.3343 8.56047 17.4289 8.90422 17.606C9.40649 17.8437 9.95386 17.9709 10.5095 17.9792C12.0747 17.9496 12.9992 16.5993 13.6744 15.6125C14.2071 14.8286 14.624 13.9721 14.9121 13.0692C14.9735 12.8722 14.9585 12.6593 14.87 12.4729C14.7815 12.2865 14.6261 12.1403 14.4347 12.0633V12.0633ZM8.64094 2.91923C9.07068 2.43854 9.60915 2.06759 10.2114 1.83736C10.0797 2.48557 9.78811 3.09062 9.36326 3.59761C9.07488 3.9436 8.72401 4.23228 8.32893 4.4486L8.32653 4.44942C8.30336 4.45901 8.28019 4.4678 8.25699 4.47738C8.10437 4.53731 7.9158 4.61162 7.77039 4.65956C7.91082 4.0159 8.21009 3.41762 8.64094 2.91923V2.91923ZM12.324 14.6889C11.6664 15.6493 11.1491 16.3309 10.4795 16.3429C10.1558 16.3418 9.83757 16.2597 9.55383 16.1039C9.00533 15.8367 8.40372 15.6963 7.79358 15.6932C7.16224 15.6964 6.53947 15.8397 5.9702 16.1127C5.69343 16.254 5.39148 16.3392 5.08168 16.3636H5.05732C4.39212 16.3636 3.6766 15.3304 3.20158 14.6441C2.01303 12.9262 0.916767 9.50316 2.2008 7.27388C2.47006 6.79147 2.85945 6.38686 3.33118 6.09931C3.8029 5.81176 4.34095 5.65103 4.89311 5.63273L4.92068 5.63191C5.38647 5.67149 5.84131 5.79465 6.26345 5.99547C6.37092 6.03781 6.47678 6.08016 6.58186 6.11931C6.60862 6.1305 6.63619 6.14089 6.66415 6.14967C6.95532 6.26679 7.26461 6.33248 7.57824 6.34384C8.02231 6.30855 8.4561 6.19181 8.85791 5.99946C9.42431 5.72457 10.0469 5.58532 10.6765 5.59276C11.3499 5.61911 11.9963 5.86428 12.5178 6.29111C12.0722 6.70174 11.7173 7.20106 11.4761 7.75699C11.2349 8.31293 11.1126 8.91317 11.1171 9.51917V9.51999C11.1125 10.2536 11.2941 10.9764 11.6448 11.6208C11.9956 12.2651 12.5041 12.8099 13.1227 13.2043C12.9073 13.7248 12.6397 14.2222 12.324 14.6889V14.6889Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span>App store</span>
+            </a>
+            <a href="#" class="button-primary">
+              <svg
+                width="16"
+                height="18"
+                viewBox="0 0 16 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.2873 7.89669C15.0299 7.75759 12.8229 6.47688 11.9947 5.99483L11.9923 5.99319L1.96105 0.201309C1.79015 0.0969776 1.59852 0.0312499 1.39957 0.00872446C1.20062 -0.013801 0.999145 0.00741986 0.809251 0.0709024C0.787821 0.0785975 0.767685 0.0863416 0.746853 0.0958786C0.698483 0.111645 0.651203 0.130575 0.605316 0.152544C0.413518 0.267195 0.256166 0.43143 0.149818 0.627965C0.0434703 0.824501 -0.00794069 1.04607 0.000994438 1.26936V16.8112C-0.00509304 17.0193 0.0441708 17.2252 0.143749 17.4079C0.243327 17.5906 0.389646 17.7437 0.567745 17.8513C0.608822 17.8714 0.651143 17.8888 0.694449 17.9035C0.718129 17.9144 0.740705 17.9239 0.765139 17.9325C0.882364 17.9751 1.00582 17.9979 1.1305 18C1.36992 17.9974 1.60448 17.9321 1.81077 17.8105C2.12892 17.6259 11.9923 11.9307 11.9923 11.9307L15.2833 10.0304C15.4868 9.92846 15.6585 9.77285 15.78 9.58037C15.9014 9.3879 15.968 9.1659 15.9724 8.93835C15.9624 8.71917 15.8935 8.50674 15.7729 8.32343C15.6523 8.14011 15.4846 7.9927 15.2873 7.89669ZM1.6381 15.4166V2.53377L8.13752 8.96739L1.6381 15.4166ZM5.74561 13.647L9.301 10.1191L10.242 11.0505C9.20678 11.6483 7.45781 12.6583 5.74561 13.647V13.647ZM9.2996 7.81427L5.69971 4.25081L10.2457 6.87556L9.2996 7.81427ZM11.7117 10.2019L10.4631 8.966L11.7136 7.72512C12.3032 8.06753 13.2221 8.6005 13.8549 8.96475L11.7117 10.2019Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span>Play store</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="h-[500px] lg:h-[700px]" data-animate="fade-right">
+          <img
+            src="./assets/images/analysis.webp"
+            class="h-full w-full object-contain lg:object-right"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary-800 py-32">
+      <div class="container grid items-center gap-16 lg:grid-cols-2">
+        <div class="h-[400px] lg:h-[500px]" data-animate="fade-left">
+          <img
+            src="./assets/images/dashboard.webp"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+
+        <div class="max-w-md text-white" data-animate="fade-up">
+          <h2 class="fs-2 mb-4 text-white">
+            App for Short-term Investment Options
+          </h2>
+          <p class="mb-10">
+            The Big Oxmox advised her not to do so, because there were thousands
+            of bad Commas, devious Semikoli.
+          </p>
+          <a href="#" class="button-secondary">See features</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-32">
+      <div class="container grid items-center gap-16 lg:grid-cols-3">
+        <div data-animate="fade-up">
+          <div class="lg:border-b lg:border-primary-200 lg:pb-10">
+            <p class="mb-4 text-sm font-bold tracking-[2px]">
+              PAYMENT AUTOMATION
+            </p>
+            <h2 class="fs-2">More Revenue with Innovate</h2>
+          </div>
+          <div class="hidden pt-10 lg:block">
+            <p class="mb-4 text-lg">
+              “The Big Oxmox advised her not to do so, because there were
+              thousands”
+            </p>
+            <div class="flex items-center space-x-4 text-primary-900">
+              <img src="./assets/images/smith-zack.png" class="h-14" alt="" />
+              <div class="flex flex-col space-y-1 text-sm">
+                <span>Smith Zack</span>
+                <span>CEO EasyWP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid items-center gap-10 md:grid-cols-2 lg:col-span-2">
+          <div class="rounded-2xl bg-white p-10 shadow-lg">
+            <img
+              src="./assets/images/stock-market-graph.svg"
+              alt=""
+              class="mb-4"
+            />
+            <h3 class="mb-4 text-xl">Stock Market Graph</h3>
+            <p class="">
+              The Big Oxmox advised her not to do so, because there were
+              thousands
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white p-10 shadow-lg md:mt-10">
+            <img src="./assets/images/revenue-chart.svg" alt="" class="mb-4" />
+            <h3 class="mb-4 text-xl">Revenue Chart</h3>
+            <p class="">
+              The Big Oxmox advised her not to do so, because there were
+              thousands
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white p-10 shadow-lg">
+            <img src="./assets/images/important-tips.svg" alt="" class="mb-4" />
+            <h3 class="mb-4 text-xl">Important Tips</h3>
+            <p class="">
+              The Big Oxmox advised her not to do so, because there were
+              thousands
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white p-10 shadow-lg md:mt-10">
+            <img
+              src="./assets/images/auto-suggestion.svg"
+              alt=""
+              class="mb-4"
+            />
+            <h3 class="mb-4 text-xl">Auto Suggestion</h3>
+            <p class="">
+              The Big Oxmox advised her not to do so, because there were
+              thousands
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="relative bg-primary-800 py-32">
+      <div class="container">
+        <div class="mb-16 flex items-center justify-between text-white">
+          <h3 class="fs-2 text-white">Customer Reviews</h3>
+          <div
+            class="absolute bottom-10 left-1/2 flex -translate-x-1/2 items-center space-x-4 md:static md:translate-x-0"
+          >
+            <button
+              class="js-reviews-slider-prev flex h-10 w-10 items-center justify-center rounded-full border-2 border-white transition-colors hover:bg-white hover:text-primary-900 disabled:opacity-50"
+              aria-label="previous slide"
+              aria-controls="reviews-slider"
+            >
+              <svg
+                width="9"
+                height="13"
+                viewBox="0 0 9 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.49906 6.43945L8.49953 10.4385L6.5 12.4395L0.5 6.43945L6.5 0.439453L8.49953 2.4404L4.49906 6.43945Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="js-reviews-slider-next flex h-10 w-10 items-center justify-center rounded-full border-2 border-white transition-colors hover:bg-white hover:text-primary-900 disabled:opacity-50"
+              aria-label="next slide"
+              aria-controls="reviews-slider"
+            >
+              <svg
+                width="9"
+                height="13"
+                viewBox="0 0 9 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.10104 6.61626L5.27791 6.43945L5.10104 6.26264L1.27735 2.4403L2.92342 0.793069L8.5698 6.43945L2.92342 12.0858L1.27735 10.4386L5.10104 6.61626Z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper js-reviews-slider" id="reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="rounded-2xl bg-white p-10 shadow-lg">
+                <img src="./assets/images/stars.svg" alt="" class="mb-6" />
+                <p class="mb-4 text-lg">
+                  “The Big Oxmox advised her not to do so, because there were
+                  thousands”
+                </p>
+                <div class="flex items-center space-x-4 text-primary-900">
+                  <img
+                    src="./assets/images/smith-zack.png"
+                    class="h-14"
+                    alt=""
+                  />
+                  <div class="flex flex-col space-y-1 text-sm">
+                    <span>Smith Zack</span>
+                    <span>Android user</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="rounded-2xl bg-white p-10 shadow-lg">
+                <img src="./assets/images/stars.svg" alt="" class="mb-6" />
+                <p class="mb-4 text-lg">
+                  “The Big Oxmox advised her not to do so, because there were
+                  thousands”
+                </p>
+                <div class="flex items-center space-x-4 text-primary-900">
+                  <img
+                    src="./assets/images/smith-zack.png"
+                    class="h-14"
+                    alt=""
+                  />
+                  <div class="flex flex-col space-y-1 text-sm">
+                    <span>Smith Zack</span>
+                    <span>Android user</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="rounded-2xl bg-white p-10 shadow-lg">
+                <img src="./assets/images/stars.svg" alt="" class="mb-6" />
+                <p class="mb-4 text-lg">
+                  “The Big Oxmox advised her not to do so, because there were
+                  thousands”
+                </p>
+                <div class="flex items-center space-x-4 text-primary-900">
+                  <img
+                    src="./assets/images/smith-zack.png"
+                    class="h-14"
+                    alt=""
+                  />
+                  <div class="flex flex-col space-y-1 text-sm">
+                    <span>Smith Zack</span>
+                    <span>Android user</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="rounded-2xl bg-white p-10 shadow-lg">
+                <img src="./assets/images/stars.svg" alt="" class="mb-6" />
+                <p class="mb-4 text-lg">
+                  “The Big Oxmox advised her not to do so, because there were
+                  thousands”
+                </p>
+                <div class="flex items-center space-x-4 text-primary-900">
+                  <img
+                    src="./assets/images/smith-zack.png"
+                    class="h-14"
+                    alt=""
+                  />
+                  <div class="flex flex-col space-y-1 text-sm">
+                    <span>Smith Zack</span>
+                    <span>Android user</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="rounded-2xl bg-white p-10 shadow-lg">
+                <img src="./assets/images/stars.svg" alt="" class="mb-6" />
+                <p class="mb-4 text-lg">
+                  “The Big Oxmox advised her not to do so, because there were
+                  thousands”
+                </p>
+                <div class="flex items-center space-x-4 text-primary-900">
+                  <img
+                    src="./assets/images/smith-zack.png"
+                    class="h-14"
+                    alt=""
+                  />
+                  <div class="flex flex-col space-y-1 text-sm">
+                    <span>Smith Zack</span>
+                    <span>Android user</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32">
+      <div
+        class="container grid items-center gap-16 lg:grid-cols-2 xl:max-w-screen-xl"
+      >
+        <div data-animate="fade-up">
+          <p class="mb-2 text-sm font-bold tracking-[2px]">OUR PARTNERS</p>
+          <h2 class="fs-2 mb-4">Our Trusted Partners</h2>
+          <p class="mb-10 max-w-sm">
+            The Big Oxmox advised her not to do so, because there were thousands
+          </p>
+          <a href="#" class="button-primary">Sign up</a>
+        </div>
+
+        <div
+          class="grid gap-6 sm:grid-cols-3 lg:order-first"
+          data-animate="fade-left"
+        >
+          <div
+            class="flex items-center justify-center rounded-xl bg-primary-200 p-6 sm:col-span-1"
+          >
+            <img src="./assets/images/partners-1.svg" alt="" class="" />
+          </div>
+          <div
+            class="flex items-center justify-center rounded-xl bg-primary-200 p-6 sm:col-span-2"
+          >
+            <img src="./assets/images/partners-2.svg" alt="" class="" />
+          </div>
+          <div
+            class="flex items-center justify-center rounded-xl bg-primary-200 p-6 sm:col-span-2"
+          >
+            <img src="./assets/images/partners-3.svg" alt="" class="" />
+          </div>
+          <div
+            class="flex items-center justify-center rounded-xl bg-primary-200 p-6 sm:col-span-1"
+          >
+            <img src="./assets/images/partners-4.svg" alt="" class="" />
+          </div>
+          <div
+            class="flex items-center justify-center rounded-xl bg-primary-200 p-6 sm:col-span-1"
+          >
+            <img src="./assets/images/partners-5.svg" alt="" class="" />
+          </div>
+          <div
+            class="flex items-center justify-center rounded-xl bg-primary-200 p-6 sm:col-span-2"
+          >
+            <img src="./assets/images/partners-6.svg" alt="" class="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="bg-primary-200 py-32">
+      <div class="container">
+        <div class="mb-16 text-center">
+          <h2 class="fs-2 mb-2">Plans and Pricing</h2>
+          <p class="text-lg">The most competitively price in the market</p>
+        </div>
+
+        <div class="grid items-end gap-16 lg:grid-cols-3">
+          <div
+            class="relative left-1/2 flex max-w-md -translate-x-1/2 flex-col rounded-2xl bg-white p-10 shadow-lg lg:static lg:translate-x-0"
+          >
+            <span class="mb-2">Starter</span>
+            <div
+              class="mb-10 flex items-end justify-between border-b border-primary-500/20 pb-6 text-primary-900"
+            >
+              <span class="text-3xl">$0.00</span>
+              <span class="rounded-full bg-primary-500/20 px-3 py-1 text-sm"
+                >Always free</span
+              >
+            </div>
+            <div class="mb-10 space-y-6">
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited projects</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited activity log</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited file storage</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">List view projects</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited projects</span>
+              </div>
+            </div>
+            <a href="#" class="button-primary mx-auto">Get started</a>
+          </div>
+
+          <div
+            class="relative left-1/2 max-w-md -translate-x-1/2 rounded-2xl border-[3px] border-primary-900 bg-primary-900 lg:static lg:translate-x-0"
+          >
+            <span class="block p-3 text-center text-white">Recommended</span>
+            <div class="flex flex-col rounded-2xl bg-white p-10 shadow-lg">
+              <span class="mb-2">Agency</span>
+              <div
+                class="mb-10 flex items-end justify-between border-b border-primary-500/20 pb-6 text-primary-900"
+              >
+                <span class="text-3xl">$59</span>
+                <span class="rounded-full bg-primary-500/20 px-3 py-1 text-sm"
+                  >Always free</span
+                >
+              </div>
+              <div class="mb-10 space-y-6">
+                <div class="flex items-center">
+                  <img src="./assets/images/check-mark.svg" alt="" />
+                  <span class="ml-4">Unlimited projects</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./assets/images/check-mark.svg" alt="" />
+                  <span class="ml-4">Unlimited activity log</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./assets/images/check-mark.svg" alt="" />
+                  <span class="ml-4">Unlimited file storage</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./assets/images/check-mark.svg" alt="" />
+                  <span class="ml-4">List view projects</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./assets/images/check-mark.svg" alt="" />
+                  <span class="ml-4">Unlimited projects</span>
+                </div>
+              </div>
+              <a href="#" class="button-primary mx-auto">Get started</a>
+            </div>
+          </div>
+
+          <div
+            class="relative left-1/2 flex max-w-md -translate-x-1/2 flex-col rounded-2xl bg-white p-10 shadow-lg lg:static lg:translate-x-0"
+          >
+            <span class="mb-2">Enterprise</span>
+            <div
+              class="mb-10 flex items-end justify-between border-b border-primary-500/20 pb-6 text-primary-900"
+            >
+              <span class="text-3xl">$199</span>
+              <span class="rounded-full bg-primary-500/20 px-3 py-1 text-sm"
+                >Always free</span
+              >
+            </div>
+            <div class="mb-10 space-y-6">
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited projects</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited activity log</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited file storage</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">List view projects</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/images/check-mark.svg" alt="" />
+                <span class="ml-4">Unlimited projects</span>
+              </div>
+            </div>
+            <a href="#" class="button-primary mx-auto">Get started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faqs" class="py-32">
+      <div class="container xl:max-w-screen-xl">
+        <div class="mb-16 text-center">
+          <h2 class="fs-2 mb-2">Frequently asked questions</h2>
+          <p class="text-lg">
+            We have put together some commonly asked questions
+          </p>
+        </div>
+
+        <div class="grid gap-y-10 lg:grid-cols-2 lg:gap-16">
+          <div class="space-y-10">
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-10">
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+
+            <div class="overflow-hidden rounded-lg border">
+              <button
+                class="js-faq-question flex w-full items-center justify-between p-6 text-left text-lg text-primary-900"
+                aria-expanded="false"
+              >
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+                <img
+                  src="./assets/images/angle-down.svg"
+                  alt=""
+                  class="pl-10"
+                />
+              </button>
+              <div
+                class="js-faq-answer max-h-0 overflow-hidden transition-[max-height] duration-300"
+              >
+                <p class="p-6 pt-0">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary-800 pt-32 text-white">
+      <div class="container grid items-center gap-16 lg:grid-cols-2">
+        <div class="text-center lg:text-left" data-animate="fade-up">
+          <h1 class="fs-1 mb-10 text-white">Download #1 Investment App</h1>
+          <p class="mb-10 text-lg">
+            Join with
+            <span class="font-bold">56000+ Investors</span>
+            and grow your business online
+          </p>
+
+          <div
+            class="inline-flex flex-col items-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0"
+          >
+            <a href="#" class="button-secondary">
+              <svg
+                width="15"
+                height="18"
+                viewBox="0 0 15 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4347 12.0633C13.9341 11.8492 13.5076 11.4923 13.2087 11.0373C12.9097 10.5823 12.7514 10.0492 12.7535 9.50476C12.76 9.01876 12.8902 8.54241 13.1317 8.12064C13.3733 7.69888 13.7183 7.34559 14.1342 7.0941C14.2283 7.03595 14.3097 6.95932 14.3733 6.86884C14.437 6.77836 14.4816 6.67591 14.5045 6.56769C14.5275 6.45947 14.5282 6.34773 14.5067 6.23921C14.4852 6.1307 14.442 6.02766 14.3795 5.93634C14.0056 5.39262 13.5182 4.93651 12.9509 4.5995C12.3836 4.26249 11.7499 4.05261 11.0936 3.98434C11.7044 3.01488 11.9816 1.87231 11.883 0.730692C11.8637 0.523394 11.7649 0.331616 11.6073 0.1956C11.4497 0.0595846 11.2455 -0.010095 11.0376 0.00118339C9.63273 0.126399 8.33037 0.789025 7.40205 1.85092C6.81359 2.5328 6.39833 3.34659 6.19153 4.22323C5.76428 4.07864 5.31697 4.00206 4.86595 3.99631C4.03096 4.01997 3.21626 4.25898 2.50082 4.69016C1.78539 5.12133 1.19349 5.73005 0.782533 6.45729C-0.761986 9.13881 0.182865 13.1571 1.85601 15.5758C2.52719 16.545 3.53437 18 5.05371 18C5.08367 18 5.11404 18 5.1444 17.9984C5.65347 17.9695 6.15184 17.8405 6.61101 17.6188C6.97777 17.4329 7.38241 17.334 7.79357 17.3296C8.18023 17.3343 8.56047 17.4289 8.90422 17.606C9.40649 17.8437 9.95386 17.9709 10.5095 17.9792C12.0747 17.9496 12.9992 16.5993 13.6744 15.6125C14.2071 14.8286 14.624 13.9721 14.9121 13.0692C14.9735 12.8722 14.9585 12.6593 14.87 12.4729C14.7815 12.2865 14.6261 12.1403 14.4347 12.0633V12.0633ZM8.64094 2.91923C9.07068 2.43854 9.60915 2.06759 10.2114 1.83736C10.0797 2.48557 9.78811 3.09062 9.36326 3.59761C9.07488 3.9436 8.72401 4.23228 8.32893 4.4486L8.32653 4.44942C8.30336 4.45901 8.28019 4.4678 8.25699 4.47738C8.10437 4.53731 7.9158 4.61162 7.77039 4.65956C7.91082 4.0159 8.21009 3.41762 8.64094 2.91923V2.91923ZM12.324 14.6889C11.6664 15.6493 11.1491 16.3309 10.4795 16.3429C10.1558 16.3418 9.83757 16.2597 9.55383 16.1039C9.00533 15.8367 8.40372 15.6963 7.79358 15.6932C7.16224 15.6964 6.53947 15.8397 5.9702 16.1127C5.69343 16.254 5.39148 16.3392 5.08168 16.3636H5.05732C4.39212 16.3636 3.6766 15.3304 3.20158 14.6441C2.01303 12.9262 0.916767 9.50316 2.2008 7.27388C2.47006 6.79147 2.85945 6.38686 3.33118 6.09931C3.8029 5.81176 4.34095 5.65103 4.89311 5.63273L4.92068 5.63191C5.38647 5.67149 5.84131 5.79465 6.26345 5.99547C6.37092 6.03781 6.47678 6.08016 6.58186 6.11931C6.60862 6.1305 6.63619 6.14089 6.66415 6.14967C6.95532 6.26679 7.26461 6.33248 7.57824 6.34384C8.02231 6.30855 8.4561 6.19181 8.85791 5.99946C9.42431 5.72457 10.0469 5.58532 10.6765 5.59276C11.3499 5.61911 11.9963 5.86428 12.5178 6.29111C12.0722 6.70174 11.7173 7.20106 11.4761 7.75699C11.2349 8.31293 11.1126 8.91317 11.1171 9.51917V9.51999C11.1125 10.2536 11.2941 10.9764 11.6448 11.6208C11.9956 12.2651 12.5041 12.8099 13.1227 13.2043C12.9073 13.7248 12.6397 14.2222 12.324 14.6889V14.6889Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span>App store</span>
+            </a>
+            <a href="#" class="button-secondary">
+              <svg
+                width="16"
+                height="18"
+                viewBox="0 0 16 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.2873 7.89669C15.0299 7.75759 12.8229 6.47688 11.9947 5.99483L11.9923 5.99319L1.96105 0.201309C1.79015 0.0969776 1.59852 0.0312499 1.39957 0.00872446C1.20062 -0.013801 0.999145 0.00741986 0.809251 0.0709024C0.787821 0.0785975 0.767685 0.0863416 0.746853 0.0958786C0.698483 0.111645 0.651203 0.130575 0.605316 0.152544C0.413518 0.267195 0.256166 0.43143 0.149818 0.627965C0.0434703 0.824501 -0.00794069 1.04607 0.000994438 1.26936V16.8112C-0.00509304 17.0193 0.0441708 17.2252 0.143749 17.4079C0.243327 17.5906 0.389646 17.7437 0.567745 17.8513C0.608822 17.8714 0.651143 17.8888 0.694449 17.9035C0.718129 17.9144 0.740705 17.9239 0.765139 17.9325C0.882364 17.9751 1.00582 17.9979 1.1305 18C1.36992 17.9974 1.60448 17.9321 1.81077 17.8105C2.12892 17.6259 11.9923 11.9307 11.9923 11.9307L15.2833 10.0304C15.4868 9.92846 15.6585 9.77285 15.78 9.58037C15.9014 9.3879 15.968 9.1659 15.9724 8.93835C15.9624 8.71917 15.8935 8.50674 15.7729 8.32343C15.6523 8.14011 15.4846 7.9927 15.2873 7.89669ZM1.6381 15.4166V2.53377L8.13752 8.96739L1.6381 15.4166ZM5.74561 13.647L9.301 10.1191L10.242 11.0505C9.20678 11.6483 7.45781 12.6583 5.74561 13.647V13.647ZM9.2996 7.81427L5.69971 4.25081L10.2457 6.87556L9.2996 7.81427ZM11.7117 10.2019L10.4631 8.966L11.7136 7.72512C12.3032 8.06753 13.2221 8.6005 13.8549 8.96475L11.7117 10.2019Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span>Play store</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="h-[500px] lg:h-[700px]" data-animate="fade-right">
+          <img
+            src="./assets/images/dashboard-2.webp"
+            class="h-full w-full object-contain lg:object-right"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary-900 py-24 text-white">
+      <div class="container grid gap-10 md:grid-cols-6">
+        <div class="md:col-span-2 lg:col-span-1">
+          <h4 class="mb-4 uppercase tracking-wide text-white">Company</h4>
+          <ul class="space-y-4 text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >Why us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >Our terms</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1">
+          <h4 class="mb-4 uppercase tracking-wide text-white">Pages</h4>
+          <ul class="space-y-4 text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >Sign up</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1">
+          <h4 class="mb-4 uppercase tracking-wide text-white">Other</h4>
+          <ul class="space-y-4 text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >License</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white/70 transition-colors hover:text-white"
+                >Changelog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-6 lg:order-first lg:col-span-3">
+          <img src="./assets/images/logo-light.svg" alt="" class="mb-6" />
+          <ul class="mb-6 flex items-center space-x-4">
+            <li>
+              <a
+                href="#"
+                class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white transition-colors hover:bg-white hover:text-primary-900"
+              >
+                <svg
+                  width="7"
+                  height="14"
+                  viewBox="0 0 7 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.42058 13.3996V7.39348H0.851562V5.23098H2.42058V3.38393C2.42058 1.9325 3.3474 0.599609 5.483 0.599609C6.34768 0.599609 6.98706 0.683513 6.98706 0.683513L6.93668 2.70292C6.93668 2.70292 6.28461 2.69649 5.57304 2.69649C4.80291 2.69649 4.67953 3.05572 4.67953 3.65196V5.23098H6.9979L6.89702 7.39348H4.67953V13.3996H2.42058Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white transition-colors hover:bg-white hover:text-primary-900"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4042 1.90223C12.9316 2.10529 12.4173 2.25142 11.8875 2.30834C12.4375 1.9829 12.8494 1.46875 13.0458 0.86236C12.5297 1.16815 11.9643 1.38258 11.3747 1.49613C11.1283 1.23374 10.8303 1.02471 10.4992 0.882061C10.1681 0.739413 9.81108 0.666205 9.45035 0.666999C7.99084 0.666999 6.81705 1.84532 6.81705 3.2913C6.81705 3.49435 6.84176 3.6974 6.88192 3.89277C4.69651 3.77893 2.74741 2.73906 1.45161 1.14694C1.2155 1.54861 1.09177 2.00595 1.09329 2.4714C1.09329 3.38206 1.55818 4.18504 2.26708 4.65729C1.84931 4.6409 1.44133 4.52653 1.07631 4.32348V4.35579C1.07631 5.63102 1.98136 6.68781 3.18758 6.93086C2.9611 6.98946 2.72811 7.01943 2.49412 7.02008C2.32268 7.02008 2.16051 7.00316 1.9968 6.98009C2.3304 8.01996 3.30187 8.77526 4.45867 8.79987C3.55361 9.50594 2.41998 9.92127 1.18905 9.92127C0.968193 9.92127 0.764325 9.91358 0.552734 9.88897C1.72034 10.635 3.10572 11.0658 4.59767 11.0658C9.44109 11.0658 12.0914 7.06931 12.0914 3.60049C12.0914 3.48666 12.0914 3.37283 12.0837 3.259C12.5964 2.88519 13.0458 2.42217 13.4042 1.90223Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white transition-colors hover:bg-white hover:text-primary-900"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.93375 3.71573C5.10926 3.71573 3.6368 5.1823 3.6368 6.99949C3.6368 8.81668 5.10926 10.2832 6.93375 10.2832C8.75825 10.2832 10.2307 8.81668 10.2307 6.99949C10.2307 5.1823 8.75825 3.71573 6.93375 3.71573ZM6.93375 9.13369C5.75386 9.13369 4.79098 8.17466 4.79098 6.99949C4.79098 5.82432 5.75386 4.86529 6.93375 4.86529C8.11365 4.86529 9.07653 5.82432 9.07653 6.99949C9.07653 8.17466 8.11365 9.13369 6.93375 9.13369ZM10.3657 2.81594C9.93975 2.81594 9.59575 3.15857 9.59575 3.58285C9.59575 4.00712 9.93975 4.34975 10.3657 4.34975C10.7917 4.34975 11.1357 4.00873 11.1357 3.58285C11.1358 3.4821 11.116 3.38232 11.0774 3.28921C11.0387 3.19611 10.982 3.11152 10.9105 3.04028C10.839 2.96904 10.754 2.91256 10.6605 2.87406C10.5671 2.83557 10.4669 2.81581 10.3657 2.81594V2.81594ZM13.3605 6.99949C13.3605 6.11571 13.3685 5.23993 13.3187 4.35775C13.2689 3.33308 13.0342 2.42368 12.2819 1.67439C11.5279 0.923498 10.6165 0.691346 9.58771 0.641713C8.70038 0.59208 7.82108 0.600086 6.93536 0.600086C6.04803 0.600086 5.16873 0.59208 4.28301 0.641713C3.25422 0.691346 2.34117 0.925099 1.58887 1.67439C0.834956 2.42528 0.60187 3.33308 0.552038 4.35775C0.502206 5.24153 0.510244 6.11731 0.510244 6.99949C0.510244 7.88167 0.502206 8.75905 0.552038 9.64123C0.60187 10.6659 0.836563 11.5753 1.58887 12.3246C2.34278 13.0755 3.25422 13.3076 4.28301 13.3573C5.17034 13.4069 6.04964 13.3989 6.93536 13.3989C7.82269 13.3989 8.70199 13.4069 9.58771 13.3573C10.6165 13.3076 11.5296 13.0739 12.2819 12.3246C13.0358 11.5737 13.2689 10.6659 13.3187 9.64123C13.3701 8.75905 13.3605 7.88327 13.3605 6.99949V6.99949ZM11.9459 10.7748C11.8285 11.0662 11.6871 11.2839 11.4604 11.5081C11.2338 11.7338 11.0168 11.8747 10.7242 11.9916C9.87866 12.3262 7.87092 12.2509 6.93375 12.2509C5.99659 12.2509 3.98723 12.3262 3.1417 11.9932C2.84913 11.8763 2.63052 11.7354 2.40547 11.5097C2.17881 11.2839 2.03735 11.0678 1.92001 10.7764C1.58565 9.93262 1.6612 7.9329 1.6612 6.99949C1.6612 6.06608 1.58565 4.06476 1.92001 3.22261C2.03735 2.93122 2.17881 2.71347 2.40547 2.48933C2.63212 2.26518 2.84913 2.12269 3.1417 2.00581C3.98723 1.67279 5.99659 1.74804 6.93375 1.74804C7.87092 1.74804 9.88027 1.67279 10.7258 2.00581C11.0184 2.12269 11.237 2.26358 11.462 2.48933C11.6887 2.71508 11.8302 2.93122 11.9475 3.22261C12.2819 4.06476 12.2063 6.06608 12.2063 6.99949C12.2063 7.9329 12.2819 9.93262 11.9459 10.7748Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="text-sm">copyright &copy; 2023 Innovate.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendor.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

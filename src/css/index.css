@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-primary-900;
+  }
+}
+
+@layer components {
+  .button {
+    @apply inline-flex items-center space-x-2 rounded-lg border-2 px-8 py-4 text-base;
+  }
+
+  .button-primary {
+    @apply button border-primary-900 text-primary-900 transition-colors hover:border-primary-600 hover:bg-primary-600 hover:text-white;
+  }
+
+  .button-secondary {
+    @apply button border-white text-white transition-colors hover:bg-white hover:text-primary-900;
+  }
+}
+
+@layer utilities {
+  .fs-1 {
+    @apply text-5xl/tight lg:text-7xl/tight;
+  }
+
+  .fs-2 {
+    @apply text-3xl/tight lg:text-4xl/tight;
+  }
+}
+
+/* states */
+.js-navbar.scroll {
+  @apply bg-white shadow;
+}
+
+.js-menu.show {
+  @apply translate-x-0;
+}
+
+.js-dropdown.show {
+  @apply opacity-100;
+}
+
+.js-faq-question.show,
+.js-faq-answer.show {
+  @apply bg-primary-200;
+}
+
+/* animation */
+[data-animate="fade-up"] {
+  @apply translate-y-10 opacity-0 transition duration-1000;
+}
+
+[data-animate="fade-up"].show {
+  @apply translate-y-0 opacity-100;
+}
+
+[data-animate="fade-left"] {
+  @apply -translate-x-10 opacity-0 transition duration-1000;
+}
+
+[data-animate="fade-left"].show {
+  @apply translate-x-0 opacity-100;
+}
+
+[data-animate="fade-right"] {
+  @apply translate-x-10 opacity-0 transition duration-1000;
+}
+
+[data-animate="fade-right"].show {
+  @apply translate-x-0 opacity-100;
+}
